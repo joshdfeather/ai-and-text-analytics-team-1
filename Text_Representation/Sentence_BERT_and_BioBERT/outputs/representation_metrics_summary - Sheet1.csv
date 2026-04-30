@@ -1,0 +1,6 @@
+Model,Split,Total_Samples,Accuracy,Macro_F1,Yes_F1,No_F1,Maybe_F1,Main_Observation
+,,,,,,,,
+BioBERT,validation,100,0.48,0.426,0.516,0.5,0.261,"Best validation macro-F1 among my dense representation experiments, but maybe class remains weak."
+BioBERT,test,500,0.452,0.375,0.496,0.478,0.152,Confuses yes and no frequently; maybe class has very low F1.
+Sentence-BERT,validation,100,0.47,0.394,0.544,0.447,0.19,"Slightly weaker than BioBERT on validation, especially on maybe."
+Sentence-BERT,test,500,0.446,0.384,0.541,0.397,0.216,Slightly better test macro-F1 than BioBERT because it recovers more maybe cases.
